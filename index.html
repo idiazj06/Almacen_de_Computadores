@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="./Style/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +10,41 @@
 </head>
 
 <body>
-    <div>
-        <label>Cantidad de computadores comprados</label>
-        <input id="inputCantComp"> <br><br>
-        <button onclick="capturaDatos()">Enviar</button>
-        <script src="./Script/script.js"></script>
-    </div>
-    <div>
-        <form>
-            <label>Valor de la compra</label>
-            <input id="inputValCompra" placeholder="$" readonly> <br><br>
-            <label>Valor del descuento</label>
-            <input id="inputValDescuento" placeholder="$" readonly> <br><br>
-            <label>Total</label>
-            <input id="inputValTotal" placeholder="$" readonly> <br><br>
-        </form>
+    <header>
+        <h1>Almacen de computadores</h1>
+        <h4>Almacen de computadores</h4>
+    </header>
+    <main>
+        <div id="cantComputadores">
+            <div id="cantCompra">
+                <label>Cantidad de computadores comprados</label>
+                <input id="inputCantComp">
+            </div>
+            <div id="boton">
+                <button onclick="capturaDatos()">Enviar</button><br><br>
 
-        <div id="valorDesc">            
-
+            </div>
         </div>
 
-    </div>
+        <div id="resultados">
+            <form id="valores">
+                <label>Valor de la compra</label>
+                <input id="inputValCompra" placeholder="$" readonly> <br><br>
+                <label>Valor del descuento</label>
+                <input id="inputValDescuento" placeholder="$" readonly> <br><br>
+                <label>Total</label>
+                <input id="inputValTotal" placeholder="$" readonly> <br><br>
+            </form>
+        </div>
+
+        <div id="valorDesc">
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./Script/script.js"></script>
 </body>
 
 </html>

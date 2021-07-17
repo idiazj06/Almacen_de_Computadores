@@ -26,7 +26,8 @@ function capturaDatos() {
         valorDescuento = valorCompra * 0.35;
     }
     else {
-        "";
+        (valorCompra >  9840000) 
+            valorDescuento = 0;
     }
     //Enlace para que muestre la variable ValorDescuento en HTML
     document.getElementById('inputValDescuento').value = valorDescuento;

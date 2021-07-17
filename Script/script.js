@@ -1,44 +1,59 @@
-//variables y constantes//
-let total= 0 ;
-let , cant; 
-let descuento; 
-let compra;
-let totalDesc = 0;
-const compt= 820000
+//Definicion de variables y constantes
+let valorDesc = 0;
+let valorCompra = 0;
+let valorDescuento = 0;
+let valorTotal = 0;
+let valNull = "El valor ingresado no es válido";
+const valorComputador = Number(820000);
+
+//Captura de datos
+function capturaDatos() {
+    let computadores = document.getElementById('inputCantComp').value;
+
+    //Definicion de variable ValorCompra
+    valorCompra = computadores * valorComputador;
+    //Enlace para que se muestre en HTML
+    document.getElementById('inputValCompra').value = valorCompra;
+
+    //Condicional para calculo del descuento en base al valor de la compra
+    if (valorCompra >= 1640000 && valorCompra < 3280000) {
+        valorDescuento = valorCompra * 0.15;
+    }
+    else if (valorCompra > 3280000 && valorCompra <= 6560000) {
+        valorDescuento = valorCompra * 0.25;
+    }
+    else if (valorCompra > 6560000 && valorCompra <= 9840000) {
+        valorDescuento = valorCompra * 0.35;
+    }
+    else {
+        "";
+    }
+    //Enlace para que muestre la variable ValorDescuento en HTML
+    document.getElementById('inputValDescuento').value = valorDescuento;
+
+    //Definicion de variable valorTotal
+    valorTotal = valorCompra - valorDescuento;
+
+    //Enlace para que se muestre en HTML
+    document.getElementById('inputValTotal').value = valorTotal;
 
 
-//operaciones//
-
-function compra () {
-    compra= document.getElementById("cant").value;
-    compra= compt * cant;
+    if (valorCompra >= 1640000 &&  valorCompra<= 9840000) {
+        valorDesc = (valorDescuento / valorCompra) * 100;
+    }
+    else if (valorCompra > 9840000 ){
+        valorDesc = '0';
+    }
+    else{
+        (computadores <= 1640000 );
+        valorDesc = '0';
+    }
     
+
+    document.getElementById('valorDesc').innerHTML = `Su descuento fue del ${valorDesc} %`
+
+
+
+
 }
 
-function total() {
-    total = document.getElementById("total").value;
-    total= (compt * cant)- descuento;
-}
-
-if (cant <= 3280000 && cant >= 1680000) {
-    descuento = compra * 0.15;    
-}
-else if (cant <= 6560000 && cant > 3280000) {
-    descuento = compra * 0.25;   
-}
-else if (cant <= 9840000 && cant > 6560000) {
-    descuento = compra * 0.35;   
-}
-else if (cant > 9840000) {
-    descuento = compra * 0;   
-}
-else{
-    descuento = compra * 0;
-    alert('El valor ingresado no es válido');
-}
-
-    
-
-document.getElementsById("compra").innerHTML = compra;
-document.getElementsById("descuento").innerHTML = descuento;
-document.getElementsById("total").innerHTML = total;

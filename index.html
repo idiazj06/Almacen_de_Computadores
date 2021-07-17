@@ -1,79 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orden de compra</title>
-    
-    <h1>ALMACEN DE COMPUTADORES</h1>
-        <H3>Almacén de computadores</H3>
-
-        <link rel="stylesheet" href="./Style/style.css">
+    <title>Document</title>
 </head>
+
 <body>
-<script src="./Script/script.js"></script>
-    <main>
-        <div>
-            <form id="comp-form">
-                <div >
-                    Cantidad de computadores comprados 
-                    <input 
-                        id="cant"
-                        type="text"
-                        placeholder="$"                          
-                        required
-            />                                                  
-                            
-                </div>
-                <div class="form-group">
-                    <button type="submit" id="submit">
-                        Calcular
-                    </button>
-                </div>
-            </form>
-        </div>
+    <div>
+        <label>Cantidad de computadores comprados</label>
+        <input id="inputCantComp"> <br><br>
+        <button onclick="capturaDatos()">Enviar</button>
+        <script src="./Script/script.js"></script>
+    </div>
+    <div>
+        <form>
+            <label>Valor de la compra</label>
+            <input id="inputValCompra" placeholder="$" readonly> <br><br>
+            <label>Valor del descuento</label>
+            <input id="inputValDescuento" placeholder="$" readonly> <br><br>
+            <label>Total</label>
+            <input id="inputValTotal" placeholder="$" readonly> <br><br>
+        </form>
 
-        <div>
-            <h1>Orden de compra</h1>
-            <form id="calcl-form">
-                <div>
-                    Valor de la compra
-                    <input
-                        id="compra"
-                        type="text"
-                        placeholder="$"
-                        disabled
-                    />
-
-                    Valor del descuento
-                    <input
-                        id="descuento"
-                        type="text"
-                        placeholder="$"
-                        disabled
-                    />
-
-                    Total
-                    <input
-                        id="Total"
-                        type="text"
-                        placeholder="$"
-                        disabled
-                    />
-                </div>
-
-                </form>
-            
-        <div></div>
-        <p id="resultado"></p>
+        <div id="valorDesc">            
 
         </div>
 
-        </div>
-    </main>
-
-    <footer></footer>
-
+    </div>
 </body>
+
 </html>

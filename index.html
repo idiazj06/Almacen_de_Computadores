@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Almacen de computadores</title>
 </head>
 
 <body>
@@ -17,23 +17,23 @@
     <main>
         <div id="cantComputadores">
             <div id="cantCompra">
-                <label>Cantidad de computadores comprados</label>
-                <input id="inputCantComp">
+                <label>Cantidad de computadores comprados</label><br>
+                <input id="inputCantComp" class="controlForma" placeholder="Ingrese la cantidad de computadores que adquirió"><br>
             </div>
-            <div id="boton">
-                <button onclick="capturaDatos()">Enviar</button><br><br>
+            <div>
+                <button onclick="capturaDatos()" id="boton" class="boton-captura">Calcular </button><br><br>
 
             </div>
         </div>
 
         <div id="resultados">
             <form id="valores">
-                <label>Valor de la compra</label>
-                <input id="inputValCompra" placeholder="$" readonly> <br><br>
-                <label>Valor del descuento</label>
-                <input id="inputValDescuento" placeholder="$" readonly> <br><br>
-                <label>Total</label>
-                <input id="inputValTotal" placeholder="$" readonly> <br><br>
+                <label>Valor de la compra</label><br>
+                <input id="inputValCompra" placeholder="$" class="controlForma" readonly> <br><br>
+                <label>Valor del descuento</label><br>
+                <input id="inputValDescuento" placeholder="$" class="controlForma" readonly> <br><br>
+                <label>Total</label><br>
+                <input id="inputValTotal" placeholder="$" class="controlForma" readonly> <br><br>
             </form>
         </div>
 

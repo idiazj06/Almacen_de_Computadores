@@ -2,10 +2,13 @@
 header {
     text-align: center;
     color: #ededed;
-    background-color: #171717;
+    background-color: rgba(23, 23, 23, 0.8);
     width: 50%;
     height: 20vh;
     margin: 30px auto;
+    border-radius: 20px;
+    text-shadow: 1px 3px 10px rgba(255, 58, 58, 0.4);
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.767);
 }
 
 header h1 {
@@ -23,32 +26,40 @@ body {
     background-color: #444444;
     background-size: cover;
     background-image: linear-gradient( 90deg, rgba(255, 80, 80, 0.4), rgba(68, 68, 68, 1)), url(https://360radio.com.co/wp-content/uploads/2020/06/Almacenes-tecnologia.jpg);
+    text-shadow: 1px 2px 10px rgba(255, 255, 255, 0.548);
 }
 
 main {
     display: block;
     text-align: center;
-    background-color: rgba(218, 0, 55, 0.7);
+    background-color: rgba(32, 64, 81, 0.8);
+    box-shadow: 1px 2px 40px black;
     margin: 20px auto 15px auto;
     padding: 15px;
     font-family: 'Roboto', sans-serif;
-    width: 60%;
+    width: 30%;
+    border-radius: 20px;
 }
 
 .boton-captura {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Indie Flower', cursive;
     font-size: 20px;
-    width: 15%;
+    width: 35%;
     margin: 15px 5px 5px 20px;
     padding: 0.15rem;
-    background: rgb(11, 212, 11);
-    color: inherit;
+    background: rgba(218, 0, 55, 0.93);
+    color: whitesmoke;
     border-radius: 2px;
     cursor: pointer;
+    border-radius: 20px;
+    text-shadow: 1px 2px 10px rgba(255, 255, 255, 0.767)
 }
 
 .controlForma {
     background-color: whitesmoke;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
 }
 
 div {
@@ -66,4 +77,9 @@ input {
 #inputCantComp {
     width: 19rem;
     text-align: center;
+}
+
+#valorDesc {
+    color: rgb(255, 5, 18);
+    text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.767)
 }

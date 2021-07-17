@@ -18,16 +18,13 @@ function capturaDatos() {
     //Condicional para calculo del descuento en base al valor de la compra
     if (valorCompra >= 1640000 && valorCompra < 3280000) {
         valorDescuento = valorCompra * 0.15;
-    }
-    else if (valorCompra > 3280000 && valorCompra <= 6560000) {
+    } else if (valorCompra > 3280000 && valorCompra <= 6560000) {
         valorDescuento = valorCompra * 0.25;
-    }
-    else if (valorCompra > 6560000 && valorCompra <= 9840000) {
+    } else if (valorCompra > 6560000 && valorCompra <= 9840000) {
         valorDescuento = valorCompra * 0.35;
-    }
-    else {
-        (valorCompra >  9840000) 
-            valorDescuento = 0;
+    } else {
+        (valorCompra > 9840000)
+        valorDescuento = 0;
     }
     //Enlace para que muestre la variable ValorDescuento en HTML
     document.getElementById('inputValDescuento').value = valorDescuento;
@@ -38,23 +35,16 @@ function capturaDatos() {
     //Enlace para que se muestre en HTML
     document.getElementById('inputValTotal').value = valorTotal;
 
-
-    if (valorCompra >= 1640000 &&  valorCompra<= 9840000) {
+    //Condicional para mensaje de descuento
+    if (valorCompra >= 1640000 && valorCompra <= 9840000) {
         valorDesc = (valorDescuento / valorCompra) * 100;
-    }
-    else if (valorCompra > 9840000 ){
+    } else if (valorCompra > 9840000) {
+        valorDesc = '0';
+    } else {
+        (computadores <= 1640000);
         valorDesc = '0';
     }
-    else{
-        (computadores <= 1640000 );
-        valorDesc = '0';
-    }
-    
 
+    //Enlace para que se muestre en HTML
     document.getElementById('valorDesc').innerHTML = `Su descuento fue del ${valorDesc} %`
-
-
-
-
 }
-

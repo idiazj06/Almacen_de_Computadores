@@ -131,13 +131,62 @@
             text-align: center;
             font-size: 12px;
         }
+        input {
+            width: 100%;
+            font-size: 13px;
+        }
+        .boton-captura {
+            width: 50%;
+            font-size: inherit;
+        }
+        #inputCantComp {
+            width: 80%;
+            font-size: 13px;
+        }
+        #inputValCompra {
+            width: 50%;
+            font-size: 13px;
+        }
+        #inputValDescuento {
+            width: 50%;
+            font-size: 13px;
+        }
+        #inputValTotal {
+            width: 50%;
+            font-size: 13px;
+        }
     }
     
     @media screen and (max-width: 400px) {
-        .contenedor {
-            width: 100%;
+        main {
+            width: 90%;
+        }
+        header {
+            width: 94%;
+            font-size: auto;
         }
         input {
             width: 100%;
+            font-size: 13px;
+        }
+        .boton-captura {
+            width: 50%;
+            font-size: inherit;
+        }
+        #inputCantComp {
+            width: 100%;
+            font-size: 13px;
+        }
+        #inputValCompra {
+            width: 50%;
+            font-size: 13px;
+        }
+        #inputValDescuento {
+            width: 50%;
+            font-size: 13px;
+        }
+        #inputValTotal {
+            width: 50%;
+            font-size: 13px;
         }
     }

@@ -5,45 +5,47 @@
     <link rel="stylesheet" href="./Style/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" &amp;gt;>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
     <title>Almacen de computadores</title>
 </head>
 
 <body>
-    <header>
-        <h1>Almacen de computadores</h1>
-        <h4>Almacen de computadores</h4>
-    </header>
-    <main>
-        <div id="cantComputadores">
-            <div id="cantCompra">
-                <label class="controlLabel">Cantidad de computadores comprados</label><br>
-                <input id="inputCantComp" class="controlForma" placeholder="Ingrese la cantidad de computadores que adquirió"><br>
+    <div class="contenedor">
+        <header>
+            <h1>Almacen de computadores</h1>
+            <h4>Almacen de computadores</h4>
+        </header>
+        <main>
+            <div id="cantComputadores">
+                <div id="cantCompra">
+                    <label class="controlLabel">Cantidad de computadores comprados</label><br>
+                    <input id="inputCantComp" class="controlForma" placeholder="Ingrese la cantidad de computadores que adquirió"><br>
+                </div>
+                <div>
+                    <button onclick="capturaDatos()" id="boton" class="boton-captura">Calcular </button><br><br>
+
+                </div>
             </div>
-            <div>
-                <button onclick="capturaDatos()" id="boton" class="boton-captura">Calcular </button><br><br>
+
+            <div id="resultados">
+                <form id="valores">
+                    <label class="controlLabel">Valor de la compra</label><br>
+                    <input id="inputValCompra" placeholder="$" class="controlForma" readonly> <br><br>
+                    <label class="controlLabel">Valor del descuento</label><br>
+                    <input id="inputValDescuento" placeholder="$" class="controlForma" readonly> <br><br>
+                    <label class="controlLabel">Total a pagar</label><br>
+                    <input id="inputValTotal" placeholder="$" class="controlForma" readonly> <br><br>
+                </form>
+            </div>
+
+            <div id="valorDesc">
 
             </div>
-        </div>
+        </main>
+        <footer>
 
-        <div id="resultados">
-            <form id="valores">
-                <label class="controlLabel">Valor de la compra</label><br>
-                <input id="inputValCompra" placeholder="$" class="controlForma" readonly> <br><br>
-                <label class="controlLabel">Valor del descuento</label><br>
-                <input id="inputValDescuento" placeholder="$" class="controlForma" readonly> <br><br>
-                <label class="controlLabel">Total a pagar</label><br>
-                <input id="inputValTotal" placeholder="$" class="controlForma" readonly> <br><br>
-            </form>
-        </div>
-
-        <div id="valorDesc">
-
-        </div>
-    </main>
-    <footer>
-
-    </footer>
+        </footer>
+    </div>
     <script src="./Script/script.js"></script>
 </body>
 

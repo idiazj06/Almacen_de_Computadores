@@ -1,95 +1,120 @@
-    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Otomanopee+One&family=Roboto:wght@100&display=swap');
-    header {
-        text-align: center;
-        color: #ededed;
-        background-color: rgba(23, 23, 23, 0.8);
-        width: 100vh;
-        height: 20vh;
-        margin: 5vh auto;
-        border-radius: 20px;
-        text-shadow: 1px 3px 10px rgba(255, 58, 58, 0.4);
-        box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.767);
-    }
-    
-    header h1 {
-        font-family: 'Otomanopee One', sans-serif;
-    }
-    
-    header h4 {
-        font-family: 'Indie Flower', cursive;
-    }
-    
-    body {
-        text-align: center;
-        font-size: 20px;
-        font-family: 'Roboto', sans-serif;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
-        background-image: linear-gradient( 90deg, rgba(255, 80, 80, 0.4), rgba(68, 68, 68, 1)), url(https://360radio.com.co/wp-content/uploads/2020/06/Almacenes-tecnologia.jpg);
-        text-shadow: 1px 2px 10px rgba(255, 255, 255, 0.548);
-        background-attachment: fixed;
-    }
-    
-    main {
-        display: block;
-        text-align: center;
-        background-color: rgba(32, 64, 81, 0.8);
-        box-shadow: 1px 2px 40px black;
-        margin: 1.25rem auto 0.938rem auto;
-        padding: 15px;
-        font-family: 'Roboto', sans-serif;
-        width: 80vh;
-        border-radius: 20px;
-    }
-    
-    .boton-captura {
-        font-family: 'Indie Flower', cursive;
-        font-size: 20px;
-        width: 35vh;
-        padding: 0.15rem;
-        background: rgba(218, 0, 55, 0.93);
-        color: whitesmoke;
-        border-radius: 2px;
-        cursor: pointer;
-        border-radius: 20px;
-        text-shadow: 1px 2px 10px rgba(255, 255, 255, 0.767);
-        margin: 1rem 8rem auto auto;
-    }
-    
-    .controlForma {
-        background-color: whitesmoke;
-        border-radius: 20px;
-        text-align: center;
-        font-size: 16px;
-        margin: auto 8rem auto auto;
-    }
-    
-    div {
-        text-align: center;
-        width: 100vh;
-    }
-    
-    input {
-        height: 1.5rem;
-        width: 50vh;
-        text-align: justify;
-        padding: 0.20rem;
-    }
-    
-    #inputCantComp {
-        width: 25rem;
-        text-align: center;
-    }
-    
-    #valorDesc {
-        color: rgb(255, 5, 18);
-        text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.767);
-        text-align: center;
-        margin: auto auto auto -4rem;
-    }
-    
-    .controlLabel {
-        margin-right: 7rem;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Otomanopee+One&family=Roboto&display=swap');
+body {
+    background-image: linear-gradient( 90deg, rgba(37, 36, 71, 0.863), rgb(0, 0, 0)), url(https://360radio.com.co/wp-content/uploads/2020/06/Almacenes-tecnologia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: whitesmoke;
+    background-attachment: fixed;
+    align-items: center;
+    font-size: 19px;
+    line-height: 1.3rem;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: #eeeeee;
+    -webkit-text-stroke: 0.02rem rgba(0, 0, 0, 0.664);
+}
+
+header {
+    line-height: 0.1rem;
+    font-family: 'Otomanopee One', sans-serif;
+    text-align: center;
+    padding: 1.1rem;
+    background-color: rgb(20, 30, 97);
+    height: 4rem;
+    width: auto;
+    align-items: center;
+    margin: 7% 25% auto 25%;
+    border-radius: 3.125rem;
+    -webkit-text-stroke: 0.02rem rgba(0, 0, 0, 0.664);
+    text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.63);
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+}
+
+main {
+    border-radius: 5rem;
+    line-height: 1.2rem;
+    margin: 0.1rem auto;
+    padding: 1.1rem;
+    background-color: rgb(120, 122, 145);
+    height: auto;
+    width: 25rem;
+    -webkit-text-stroke: 0.02rem rgba(0, 0, 0, 0.664);
+    text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.63);
+    box-shadow: 0px 10px 10px black;
+}
+
+input {
+    border-radius: 10rem;
+    height: 1.5rem;
+    width: 50vh;
+    text-align: justify;
+    padding: 0.20rem;
+    background-color: lightgray;
+    margin-top: 0.2rem;
+    font-family: 'Roboto', sans-serif;
+    display: initial;
+    -webkit-text-stroke: 0.02rem rgba(0, 0, 0, 0.664);
+    text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.63);
+}
+
+.boton-captura {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    width: 10rem;
+    padding: 0.15rem;
+    background: rgba(218, 0, 55, 0.93);
+    color: whitesmoke;
+    border-radius: 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-shadow: 1px 2px 10px rgba(255, 255, 255, 0.767);
+    -webkit-text-stroke: 0.02rem rgba(0, 0, 0, 0.664);
+    line-height: 1.5rem;
+    margin-top: 0.550rem;
+    box-shadow: 0px 10px 10px -6px black;
+}
+
+#valorDesc {
+    color: rgb(255, 5, 18);
+    -webkit-text-stroke: 0.02rem rgba(0, 0, 0, 0.664);
+    text-shadow: 1px 2px 10px rgba(255, 255, 255, 0.63);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#inputCantComp {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #141E61;
+    color: #eeeeee;
+}
+
+#inputValCompra {
+    width: 10rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #141E61;
+    color: #eeeeee;
+}
+
+#inputValDescuento {
+    width: 10rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #141E61;
+    color: #eeeeee;
+}
+
+#inputValTotal {
+    width: 15rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #141E61;
+    color: #eeeeee;
+}
+
+.controlLabel {
+    color: #eeeeee;
+}

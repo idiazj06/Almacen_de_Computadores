@@ -13,7 +13,7 @@ function capturaDatos() {
     //Definicion de variable ValorCompra
     valorCompra = computadores * valorComputador;
     //Enlace para que se muestre en HTML
-    document.getElementById('inputValCompra').value = valorCompra;
+    document.getElementById('inputValCompra').value = `$ ${valorCompra}`;
 
     //Condicional para calculo del descuento en base al valor de la compra
     if (valorCompra >= 1640000 && valorCompra < 3280000) {
@@ -27,13 +27,13 @@ function capturaDatos() {
         valorDescuento = 0;
     }
     //Enlace para que muestre la variable ValorDescuento en HTML
-    document.getElementById('inputValDescuento').value = valorDescuento;
+    document.getElementById('inputValDescuento').value = `$ ${valorDescuento}`;
 
     //Definicion de variable valorTotal
     valorTotal = valorCompra - valorDescuento;
 
     //Enlace para que se muestre en HTML
-    document.getElementById('inputValTotal').value = valorTotal;
+    document.getElementById('inputValTotal').value = `$ ${valorTotal}`;
 
     //Condicional para mensaje de descuento
     if (valorCompra >= 1640000 && valorCompra <= 9840000) {

@@ -1,0 +1,1 @@
+Aplicación que permite llevar el control de las compras de un almacén de computadores haciendo uso de los conceptos ásicos e integraciones de HTML, CSS y JavaScript.

@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Otomanopee+One&family=Permanent+Marker&family=Roboto:wght@300&display=swap');
+body {
+    background-color: #111516;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient( 90deg, rgba(37, 36, 71, 0.863), rgb(0, 0, 0)), url(https://360radio.com.co/wp-content/uploads/2020/06/Almacenes-tecnologia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: whitesmoke;
+    background-attachment: fixed;
+    align-items: center;
+    font-size: 19px;
+    line-height: 1.3rem;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: #eeeeee;
+}
+
+nav {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(37, 36, 71, 0.863);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+
+.logo {
+    width: 60vw;
+}
+
+nav {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+}
+
+nav>ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main {
+    border-radius: 5rem;
+    line-height: 1.2rem;    
+    margin: 15% auto;
+    padding: 1.1rem;
+    background-color: rgb(120, 122, 145);
+    height: auto;
+    width: 70vh;
+    -webkit-text-stroke: 0.02rem rgba(0, 0, 0, 0.664);
+    text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.63);
+    box-shadow: 0px 10px 10px black;
+    box-sizing: border-box;
+}
+
+input {
+    border-radius: 10rem;
+    height: 1.5rem;
+    width: 50vh;
+    text-align: justify;
+    padding: 0.20rem;
+    background-color: lightgray;
+    margin-top: 0.2rem;
+    font-family: 'Roboto', sans-serif;
+    display: initial;
+    -webkit-text-stroke: 0.02rem rgba(0, 0, 0, 0.664);
+    text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.63);
+}
+
+.boton-captura {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    width: 10rem;
+    padding: 0.15rem;
+    background: rgba(218, 0, 55, 0.93);
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 20px;
+    text-shadow: 1px 2px 10px rgba(255, 255, 255, 0.767);
+    -webkit-text-stroke: 0.02rem rgba(0, 0, 0, 0.664);
+    line-height: 1.5rem;
+    margin-top: 0.550rem;
+    box-shadow: 0px 10px 10px -6px black;
+}
+
+#valorDesc {
+    color: rgb(255, 5, 18);
+    -webkit-text-stroke: 0.02rem rgba(0, 0, 0, 0.664);
+    text-shadow: 1px 2px 10px rgba(255, 255, 255, 0.63);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#inputCantComp {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #141E61;
+    color: #eeeeee;
+}
+
+#inputValCompra {
+    width: 10rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #141E61;
+    color: #eeeeee;
+}
+
+#inputValDescuento {
+    width: 10rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #141E61;
+    color: #eeeeee;
+}
+
+#inputValTotal {
+    width: 15rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #141E61;
+    color: #eeeeee;
+}
+
+.controlLabel {
+    color: #eeeeee;
+}
+
+.contenedor {
+    position: relative;
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+    }
+    input {
+        width: 100%;
+        font-size: 13px;
+    }
+    .boton-captura {
+        width: 50%;
+        font-size: inherit;
+    }
+    #inputCantComp {
+        width: 80%;
+        font-size: 13px;
+    }
+    #inputValCompra {
+        width: 50%;
+        font-size: 13px;
+    }
+    #inputValDescuento {
+        width: 50%;
+        font-size: 13px;
+    }
+    #inputValTotal {
+        width: 50%;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        width: 90%;
+    }
+    header {
+        width: 94%;
+        font-size: auto;
+    }
+    input {
+        width: 100%;
+        font-size: 13px;
+    }
+    .boton-captura {
+        width: 50%;
+        font-size: inherit;
+    }
+    #inputCantComp {
+        width: 100%;
+        font-size: 13px;
+    }
+    #inputValCompra {
+        width: 50%;
+        font-size: 13px;
+    }
+    #inputValDescuento {
+        width: 50%;
+        font-size: 13px;
+    }
+    #inputValTotal {
+        width: 50%;
+        font-size: 13px;
+    }
+}
+
+footer {
+    margin-top: 5%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+}
